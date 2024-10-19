@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const initData = require('./data.js');
 const Listing = require('../Models/Listings.js');
 
-const MONGODB_URL = "mongodb+srv://askpankajsinha:749Bi6PgtW6FnFWs@cluster0.cscgi.mongodb.net"
+const MONGODB_URL = "mongodb://127.0.0.1:27017/StayNest";
 async function main(){
     await mongoose.connect(MONGODB_URL)
 }
